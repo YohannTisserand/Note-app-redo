@@ -47,7 +47,6 @@
 
   // index.js
   var model = new notesModel_default();
-  model.addNotes("this is a new note");
   var view = new notesView_default(model);
   view.displayNotes();
   console.log(model.getNotes());
