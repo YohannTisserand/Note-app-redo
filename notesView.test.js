@@ -20,4 +20,20 @@ describe('notes view class', () => {
 
     expect(document.querySelectorAll('div.note').length).toEqual(2);
   });
+
+  it('adds a new note', () => {
+    document.body.innerHTML = readFileSync('./index.html');
+
+    const model = new NotesModel();
+    const view = new NotesView(model);
+
+    const input = document.querySelector('#add-note-input');
+    input.value = 'This is a new note';
+
+    const button = document.querySelector('#add-note-btn');
+    button.click();
+
+    expect(document.querySelectorAll('div.note').length).toEqual(1)
+    expect(document.querySelectorAll('div.note')[0].innerText).toEqual('This is a new note')
+  });
 });
