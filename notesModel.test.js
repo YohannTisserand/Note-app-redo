@@ -1,4 +1,4 @@
-import NotesModel from './notesModel';
+import NotesModel from './notesModel.js';
 
 const notes = new NotesModel();
 
