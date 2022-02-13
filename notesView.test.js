@@ -30,7 +30,6 @@ describe('notes view class', () => {
       note: 'This is a new note'
     }));
 
-
     const model = new NotesModel();
     const view = new NotesView(model);
     const notesApi = new NotesApi();

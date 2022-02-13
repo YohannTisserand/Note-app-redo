@@ -17,6 +17,12 @@ class NotesApi {
       body: JSON.stringify(newNote),
     })
     .then(response => response.json())
+    .then(newNote => {
+      console.log('succes', newNote);
+    })
+    .catch((error) => {
+      console.error('Oops, something went wrong', error);
+    });
   }
 }
 
