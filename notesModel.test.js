@@ -18,4 +18,9 @@ describe('notes model class', () => {
     notes.reset();
     expect(notes.getNotes()).toEqual([]);
   });
+
+  it('shoud set notes to an array', () => {
+    notes.setNotes(['buy shoes', 'buy flowers']);
+    expect(notes.getNotes()).toEqual(['buy shoes', 'buy flowers']);
+  });
 });

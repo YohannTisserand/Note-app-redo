@@ -14,6 +14,10 @@ class NotesModel {
   reset() {
     this.notes = [];
   }
+
+  setNotes(array) {
+    this.notes = array;
+  }
 }
 
 export default NotesModel;
