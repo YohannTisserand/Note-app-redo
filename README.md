@@ -7,12 +7,12 @@ To run locally:
 
 Get a copy of the Note app running on your local machine (for playing around, testing or development).
 
-```sh
+```
 git clone git@github.com:YohannTisserand/note-app-redo
 ```
-```sh
-cd notes-app
-http-server ./public
+```
+cd note-app-redo
+http-server
 ```
 
 ## Technology used
