@@ -8,7 +8,7 @@ To run locally:
 Get a copy of the Note app running on your local machine (for playing around, testing or development).
 
 ```
-git clone git@github.com:YohannTisserand/note-app-redo
+git clone https://github.com/YohannTisserand/note-app-redo.git
 ```
 ```
 cd note-app-redo
